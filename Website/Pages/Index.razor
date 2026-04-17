@@ -10,10 +10,11 @@
         .backgroudImg {
             background-image: url("images/zodiac-wheel-faded-2.png");
             background-repeat: no-repeat;
+            background-blend-mode: overlay;
         }
     </style>
 
-    <div class="backgroudImg bg-white p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow">
+    <div class="backgroudImg p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow" style="background-color: rgba(26, 26, 46, 0.8) !important; backdrop-filter: blur(5px);">
         <div class="p-3 p-lg-5 pt-lg-3">
             <h1 class="display-4 fw-bold lh-1">VedAstro</h1>
             <p class="lh-base lead" style="font-weight: 400;">A non-profit, open source project to make<br class="d-none d-md-block" /><span class="fw-bold">Vedic Astrology</span> easily available to all.</p>
@@ -49,11 +50,11 @@
         {
 
             <div @onclick="() => AppData.Go(quickLink.PageRoute)" style="cursor: pointer;" class="col">
-                <div class="card">
-                    <img src="images/@(quickLink.ImageName)" class="card-img-top">
+                <div class="card h-100" style="background-color: rgba(26, 26, 46, 0.8) !important; backdrop-filter: blur(5px);">
+                    <img src="images/@(quickLink.ImageName)" class="card-img-top" style="opacity: 0.9;">
                     <div class="card-body">
-                        <h5 class="card-title">@quickLink.Title</h5>
-                        <p class="card-text">@quickLink.Description</p>
+                        <h5 class="card-title text-light">@quickLink.Title</h5>
+                        <p class="card-text" style="color: #c0c0c0;">@quickLink.Description</p>
                     </div>
                 </div>
             </div>
