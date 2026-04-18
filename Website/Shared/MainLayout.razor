@@ -26,8 +26,7 @@
         <!-- DESKTOP ONLY : SIDEBAR -->
         <div @ref="AppData.DesktopSidebar" class="col-auto align-items-start d-none d-md-block">
             <!--only visible in Desktop-->
-            <div class="vstack gap-2 mb-3 rounded-3 border shadow sticky-md-top p-md-3 bg-white" style="z-index: 100;">
-                <!-- special style to make appear in night mode despite bg-white -->
+            <div class="vstack gap-2 mb-3 rounded-3 border shadow sticky-md-top p-md-3" style="z-index: 100; background-color: rgba(26, 26, 46, 0.8) !important; backdrop-filter: blur(10px);">
                 @* SEARCH *@
                 <SearchBox />
                 <SideBarButtons />
@@ -83,7 +82,7 @@
             <!-- REFERENCE BUTTONS : buttons placed here are
             linked to places not needed all the time, like About and Docs -->
             <!--only visible in Desktop-->
-            <div style="min-width:954px;" class="rounded-3 mb-4 p-2 border shadow d-none d-md-flex gap-2 justify-content-between bg-white">
+            <div class="rounded-3 mb-4 p-2 border shadow d-none d-md-flex gap-2 justify-content-between" style="min-width:954px; background-color: rgba(26, 26, 46, 0.8) !important; backdrop-filter: blur(10px);">
                 <TopBarButtons />
             </div>
 

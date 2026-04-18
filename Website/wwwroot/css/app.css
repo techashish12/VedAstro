@@ -204,3 +204,97 @@
 .bd-placeholder-img-lg {
     font-size: calc(1.475rem + 2.7vw)
 }
+
+/*
+    Dark Cosmic Theme
+*/
+body {
+    background-color: #0b0c10;
+    background-image: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #0b0c10 100%);
+    background-attachment: fixed;
+    color: #e0e0e0;
+}
+
+.bg-white {
+    background-color: rgba(26, 26, 46, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.text-dark {
+    color: #e0e0e0 !important;
+}
+
+.border, .border-bottom, .border-top {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.5) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f1f1f1;
+}
+
+a.link-body-emphasis {
+    color: #e0e0e0 !important;
+}
+
+a.link-body-emphasis:hover {
+    color: #ffffff !important;
+}
+
+/* Update Nav tabs */
+.nav .nav-item button {
+    background: rgba(26, 26, 46, 0.8) !important;
+    color: #e0e0e0 !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav .nav-item button.active {
+    background: #1a1a2e !important;
+    color: #ffffff !important;
+    border-color: #3E7DC0;
+}
+
+#myTabContent {
+    background: transparent !important;
+}
+
+/* Update input fields */
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: #3E7DC0;
+    box-shadow: 0 0 0 0.25rem rgba(62, 125, 192, 0.25);
+}
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Cards */
+.card {
+    background-color: rgba(26, 26, 46, 0.8) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #e0e0e0;
+}
+
+.card:hover {
+    border: 1px solid #6b9ce8 !important;
+    box-shadow: 0 0 15px rgba(107, 156, 232, 0.3);
+}
+
+.text-muted {
+    color: #a0a0a0 !important;
+}
